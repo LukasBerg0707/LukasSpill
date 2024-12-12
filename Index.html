@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tittel på nett siden -->
+    <title>Hjemside</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header, altså toppen av nett siden hvor du kan bytte bellom sider -->
+    <header>
+        <!-- Setter Brukerveiledning som en link for å ta deg til siden -->
+        <a class="link" href="./Index.html">Hjem Side</a>
+        <div class="dropdown">
+            <button>Mine Spill</button>
+            <div class="dropdown-content">
+                <a href="./FlappyBerg.html">Flappy Berg</a>
+                <a href="./Plinko.html">Plinko</a>
+                <a href="./Chatbot.html">Chatbot</a>
+                <a href="./SurvivalGame.html">Survival Game</a>
+                <a style="background-color: blue;" href="https://lukasberg0707.github.io/EksamenSide/">Tuch Ball</a>
+            </div> 
+        </div>
+    </header>
+
+    <!-- Her har vi en divisjon for å laste ned spillet, 
+        den brukes også til å sette den fine bakkgrunden og alle efektene -->
+    <div class="container">
+        <h1>Velkommen</h1>
+        <h2>Dette er min nettside hvor du kan finne alle spillene mine</h2>
+        <h2>Alle spille du finner her er <spann style="color: rgb(255, 50,0);">100% GRATIS</spann>,<br> og veldig lett å laste ned</h2>
+        <p class="info">Klikk på knappen for å laste ned spillet</p>
+    </div>
+
+    <div style="background-image: url('/Bilder/FlappyBergBilde.png');" class="Bilde-container">
+        <!-- Litt tekst i toppen for å få folk til å ville laste ned spillet -->
+        <h1>Flappy Berg</h1>
+        <h2 style="color: rgb(200, 200,0); font-size: 30px;">Min verson av<br>Flappy Bird</h2>
+        <!-- Legger til to knapper den ene tar deg til github nettsiden,
+            den andre laster ned spillet som en exe.-->
+        <div class="btn-container">
+            <a href="/Spill/Flappy_Berg.zip" download>Last ned spill</a>
+        </div>
+        <p class="info">Klikk på knappen for å laste ned spillet</p>
+    </div>
+
+    <div style="background-image: url('/Bilder/PlinkBilde.png');" class="Bilde-container">
+        <!-- Litt tekst i toppen for å få folk til å ville laste ned spillet -->
+        <h1>Plinko</h1>
+        <h2 style=" font-size: 30px;">
+            
+            <br><spann style="color: yellow;">Gambling Spill</spann>
+        </h2>
+        <div class="btn-container">
+            <a href="/Spill/PlinkoSpill.zip" download>Last ned spill</a>
+        </div>
+        <p class="info">Klikk på knappen for å laste ned spillet</p>
+    </div>
+
+    <div style="background-image: url('/Bilder/ChatbotBilde.png');background-position: left;" class="Bilde-container">
+        <!-- Litt tekst i toppen for å få folk til å ville laste ned spillet -->
+        <h1>Chatbot</h1>
+        <h2 style="color: rgb(200, 200,0); font-size: 30px;">
+            <br>Min AI / KI bot</h2>
+
+        <div class="btn-container">
+            <a href="/Spill/Chatbot.exe" download>Last ned spill</a>
+        </div>
+        <p class="info">Klikk på knappen for å laste ned spillet</p>
+    </div>
+
+    <div style="background-image: url('/Bilder/TouchBallBilde.png');" class="Bilde-container">
+        <!-- Litt tekst i toppen for å få folk til å ville laste ned spillet -->
+        <h1>Touch Ball</h1>
+        <h2 style="color: rgb(200, 200,0); font-size: 30px;"><br>Tentamens oppgave</h2>
+        <!-- Legger til to knapper den ene tar deg til github nettsiden,
+            den andre laster ned spillet som en exe.-->
+        <div class="btn-container">
+            <a href="/Spill/TuchBall.exe" download>Last ned spill</a>
+            <a href="/Spill/TouchBall_Veledning.pdf" download>Last ned Brukerveiledning</a>
+        </div>
+        <p class="info">Klikk på knappen for å laste ned spillet</p>
+    </div>
+
+    <div style="background-image: url('/Bilder/OverlevelseSpillBilde.png');" class="Bilde-container">
+        <h1>Suvival game</h1>
+        <h2 style="color: rgb(200, 200,0); font-size: 30px;"><br>Beta(v 1.1)</h2>
+        <div class="btn-container">
+            <a href="/Spill/SurvivalSpill.zip" download>Last ned spill</a>
+        </div>
+        <p class="info">Klikk på knappen for å laste ned spillet</p>
+    </div>
+
+
+    <div class="container">
+        <h1>Oppdatering</h1>
+        <h2>Har du problemer?</h2>
+        <h3>Det kommer snart en side hvor du kan dele feedback eller problemer</h3>
+        <h2>Det kommer spill litt av og til</h2>
+        <p class="info">Spillene kan inneholde bugs</p>
+    </div>
+    <br><br><br><br>
+    <!-- Footer er den lile delen på bunnen der det står hvem som har laget den og sånt. -->
+    <footer>
+        <p>&copy; 2024 Spill Utvikling. Laget av: Lukas Berg</p>
+    </footer>
+
+</body>
+</html>
