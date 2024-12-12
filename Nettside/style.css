@@ -1,0 +1,224 @@
+/* Generelle stiler */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+    /* Fargeovergang med en lett opasitetseffekt */
+    background: linear-gradient(rgb(63, 91, 104), rgb(0, 0, 0));
+    background-size:contain ;
+    background-attachment:scroll; /* Bakgrunnen beveger seg når du ruller siden */
+    background-position: center;
+
+    /* Justering for tekst på bakgrunn */
+    color: #fff; /* Hvit tekst for kontrast mot bakgrunnen */
+}
+
+h1 {/*Overskriftene*/
+    font-size: 2.5rem;
+    margin-top: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Skaper skyggeeffekt på overskriftene */
+}
+
+a {/*Knappene og alle linker*/
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #006cdf;
+    padding: 15px 5%;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a:hover {/*Når du holder musen over knappene eller linker */
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+h2 a {/*alle linker i h2*/
+    text-decoration: unset;
+    background-color: unset;
+    padding: unset;
+    border-radius: unset;
+    font-size: unset;
+    transition: unset;
+    width: unset;
+}
+
+.info {/*De små tekstene med info under nedlastningene*/
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Header/ Toppen av skjermen */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+}
+/* For generele conteienre, mest brukt i brukerveiledningen */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    width: 800px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(160, 212, 255, 0.26);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.btn-container {/*Knapper i en container*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Bilde-container {/*Konteiner som skal ha bilde som bakgrund*/
+    margin-top: 50px;
+    padding: 20px;
+    width: 500px;
+    max-width: 70%;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-color: #00000085;
+    background-blend-mode: overlay;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+.Bilde-container:hover {/*Når du holder musen over bilde containeren*/
+    background-color: #0000003f;
+    transform: scale(1.005);
+}
+
+span .Bilde-container  {
+    border-radius: 15px;
+    margin-top: 50px;
+    padding: 20px;
+    width: 80%;
+    height: 600px;
+}
+
+footer {/*fotter altså den helt nede hvor det stpr hvem som har lagd det og rettigheter*/
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {/*Alle peragrafer i footeren*/
+    margin: 0;
+    font-size: 14px;
+}
+
+/*Lister */
+ul {/*Blir bukt til å oppevare lister*/
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {/*En liste del altså en av tingene som er i listen*/
+    padding: 5px 0;
+}
+
+ul li a {/*Linken/knappen i listen*/
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0px;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+ul li a:hover {/*Når du holder musen over linken i listen*/
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+
+.link {
+    font-size: 150%;
+    margin: 0;
+}
+/*Den der mine spill dropdown tingen*/
+/* Grunnleggende stil for dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    position: absolute;
+            left: 50px;
+    
+}
+
+/* Knappen som vises alltid */
+.dropdown button {
+    font-size: 120%;
+    background-color: #0079ca;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Bytt farge på knappen ved hover */
+.dropdown:hover button {
+    transform: scale(1.1);
+    background-color: #2980b9;
+}
+
+/* Listen med lenker */
+.dropdown-content {
+    display: none;
+    position: absolute;
+            left: -5px;
+    background-color: #0000009c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Lenker inni dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Effekt når musen svever over lenker */
+.dropdown-content a:hover {
+    background-color: #60aaff;
+}
+
+/* Vis dropdown når musen klikker */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
